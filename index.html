@@ -78,7 +78,7 @@ body {
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
-<style>body{background:#080a12;touch-action:none;overscroll-behavior:none;} #status{background:#080a12;}</style><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style>body{background:#080a12;touch-action:none;overscroll-behavior:none;} #status{background:#080a12;}</style><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><script>document.addEventListener('pointerdown',function(e){var L=window.rcLock;if(!L||!L.want||e.pointerType!=='mouse'||e.button!==0||document.pointerLockElement)return;var c=document.getElementById('canvas');if(!c||e.target!==c)return;var r=c.getBoundingClientRect(),fx=(e.clientX-r.left)/r.width,fy=(e.clientY-r.top)/r.height,asp=r.width/r.height;for(var i=0;i<L.skip.length;i++){var k=L.skip[i],dx=(fx-k[0])*asp,dy=fy-k[1];if(dx*dx+dy*dy<=k[2]*k[2])return;}try{var q=c.requestPointerLock();if(q&&q.catch)q.catch(function(){});}catch(_){}},true);</script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -97,7 +97,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","mainPack":"index-5c133071d8.pck","experimentalVK":false,"fileSizes":{"index-5c133071d8.pck":12031600,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","mainPack":"index-12f0e2b5f9.pck","experimentalVK":false,"fileSizes":{"index-12f0e2b5f9.pck":12035344,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
